@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "stock-metadata-auditor-9a840"
+  },
+  "targets": {
+    "stock-metadata-auditor-9a840": {
+      "hosting": {
+        "marufat-site": [
+          "maruf-at-bd"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

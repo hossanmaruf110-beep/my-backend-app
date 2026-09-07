@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "target": "marufat-site",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/admin",
+        "destination": "/mysecretadmin789.html"
+      }
+    ]
+  }
+}
