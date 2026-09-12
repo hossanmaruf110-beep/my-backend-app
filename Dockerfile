@@ -11,4 +11,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 10000
-CMD [ "node", "server mongo.js" ]
+CMD [ "node", "server-mongo.js" ]
