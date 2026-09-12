@@ -1,7 +1,12 @@
 FROM node:20-alpine
 
-# Ghostscript ইনস্টল করার কমান্ড
-RUN apk add --no-cache ghostscript
+RUN apk add --no-cache \
+    ghostscript \
+    fontconfig \
+    ttf-dejavu \
+    ttf-liberation \
+    ttf-freefont \
+    && fc-cache -f
 
 WORKDIR /usr/src/app
 
@@ -11,4 +16,5 @@ RUN npm install
 COPY . .
 
 EXPOSE 10000
+
 CMD [ "node", "server-mongo.js" ]
